@@ -1,4 +1,43 @@
-CREATE TABLE public.producto
+CREATE TABLE direccion
+(
+    id_direccion integer Primary key,
+    barrio_direccion character varying(250),
+    parroquia_direccion character varying(250) ,
+    callePrincipal_direccion character varying(250),
+    calleSecundaria_direccion character varying(250) ,
+    referencia_direccion character varying(250)
+)
+CREATE TABLE lineaPedido
+(
+    id_linea integer Primary key,
+    precio_linea numeric,
+    cantidad integer,
+    id_producto integer,
+    id_pedido integer
+)
+CREATE TABLE pedido
+(
+    id_pedido integer Primary key,
+    fecha_pedido date,
+    descripcion_pedido character varying(250),
+    estado_pedido boolean,
+    total_pedido numeric,
+    id_cliente integer
+)
+CREATE TABLE usuario
+(
+    id_usr integer Primary key,
+    nombre_usr character varying(100),
+    usuario_usr character varying(15) ,
+    contrasenia_usr character varying(25),
+    edad_usr integer,
+    telefono_usr character varying(12) ,
+    email_usr character varying(25),
+    tipo character varying(25),
+    id_direccion integer
+)
+
+CREATE TABLE producto
 (
     id_pro integer Primary key,
     nombre_pro character varying(100),
