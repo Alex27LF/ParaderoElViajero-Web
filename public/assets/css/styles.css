@@ -1,0 +1,229 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif serif;
+}
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.text-derecha{
+    text-align: right;
+}
+
+.text-centro{
+    text-align: center;    
+}
+
+.text-blanco{
+    color: rgb(0, 0, 0);
+}
+.logo{
+    width: 20%;
+    float: left;
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.img-pequeño{
+    width: 20%;
+}
+.img-redondeado{
+    border-radius: 15px;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.limpiar{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #6a4c93;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#ffd60a ;
+}
+
+h2{
+    color: #293241;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.float-contenedor{
+    position: relative;
+}
+
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+.busqueda{
+    background-image: url(../imagenes/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+    text-align: center;
+    
+}
+
+.busqueda input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.boton{
+    padding: 1% ;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.boton-color{
+    background-color: #e56b6f ;
+    color: white;
+    cursor: pointer;
+}
+
+.boton-color:hover{
+    background-color:#036666;
+    color: white;
+}
+
+/*CSS para seccion categorias*/
+.categorias{
+    padding: 4% 0;
+}
+
+.cuadro-3{
+    width: 28%;
+    float:left;
+    margin: 2%;
+}
+
+/*CSS para Menu*/
+.menu-comidas{
+    background-color: #fff1e6;
+    padding: 4% 0;
+}
+
+.menu-comidas-item{
+    width:45%;
+    margin:1%;
+    padding: 1%;
+    float:left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.img-plato{
+    width: 20%;
+    float: left;
+}
+
+.desc-plato-menu{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.precio-plato{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+
+.desc-plato{
+    font-size: 1rem;
+    color: #293241;
+}
+
+/*CSS para redes sociales*/
+
+.redes ul{
+list-style-type: none;
+}
+
+.redes ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.footer{
+    text-align: center;
+}
+
+/*CSS para dispositivos moviles, pantallas pequeñas*/
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .menu ul{
+        text-align: center;
+
+    }
+    .busqueda input[type="search"]{
+        width: 90%;
+        margin-bottom: 5%;
+        padding: 2%;
+    }
+    .boton{
+        width: 90%;
+        padding: 2%;
+    }
+    .cuadro-3{
+        width: 95%;
+        margin: 4% auto;
+    }
+    .busqueda{
+        padding: 10% 0;
+    }
+    .categorias{
+        padding: 10% 0;
+    }
+    .h2{
+        margin-bottom: 5%;
+    }
+    .menu-comidas{
+        padding: 3% 0;
+        margin-bottom: 5%;
+    }
+    .menu-comidas-item{
+        width: 95%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .sociales{
+        padding: 5% 0;
+    }
+    .navbar{
+        margin-bottom: 5%;
+    }
+}

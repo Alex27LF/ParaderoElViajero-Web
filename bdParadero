@@ -1,0 +1,25 @@
+CREATE TABLE public.producto
+(
+    id_pro integer Primary key,
+    nombre_pro character varying(100),
+    precio_pro numeric,
+    stock_pro integer,
+    descripcion_pro character varying(150),
+    imagen_pro character varying(300),
+    tipo_pro character varying(50)
+)
+
+
+INSERT INTO producto(id_pro, nombre_pro, precio_pro, stock_pro, descripcion_pro, imagen_pro, tipo_pro)
+	VALUES (1,'Doritos Rojos', 0.50, 30, 'Tortilla chip con sabor Queso', 'assets/imagenes/doritos-queso.png', 'Snacks');
+	
+INSERT INTO producto(id_pro, nombre_pro, precio_pro, stock_pro, descripcion_pro, imagen_pro, tipo_pro)
+	VALUES (2,'Doritos Verdes', 0.50, 30, 'Tortilla chip con sabor Limon', 'assets/imagenes/doritos-verdes.png', 'Snacks');
+	
+INSERT INTO producto(id_pro, nombre_pro, precio_pro, stock_pro, descripcion_pro, imagen_pro, tipo_pro)
+	VALUES (3, 'Rufles Natural', 0.50, 30, 'Papas fritas inglesas onduladas', 'assets/imagenes/rufles-natural.png', 'Snacks');
+	
+INSERT INTO producto(id_pro, nombre_pro, precio_pro, stock_pro, descripcion_pro, imagen_pro, tipo_pro)
+	VALUES (4, 'Rufles Limon', 0.50, 30, 'Papas fritas inglesas onduladas con sabor Limon', 'assets/imagenes/rufles-limon.png', 'Snacks');
+	
+	
