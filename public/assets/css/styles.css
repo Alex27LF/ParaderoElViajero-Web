@@ -79,8 +79,9 @@ h3{
     bottom: 50px;
     left: 40%;
 }
+
 .busqueda{
-    background-image: url(../imagenes/bg.jpg);
+    background-image: url(../imagenes/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,6 +116,16 @@ h3{
     background-color:#036666;
     color: white;
 }
+
+div.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.404) 0%, rgba(92, 77, 66, 0.8) 100%), url("../imagenes/presentacion1Restaurante.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
 
 /*CSS para seccion categorias*/
 .categorias{

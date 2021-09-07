@@ -4,7 +4,7 @@ const { Client } = require('pg');
 const connectionData = {user: 'postgres', host: 'localhost', database: 'ParaderoElViajero', password: 'aleks27lf', port: 5432}
 const client = new Client(connectionData);
 
-hbs.registerHelper('getProducts', function (){
+hbs.registerHelper('getProducts', function (value){
     var pro = "";
     client.connect()
     client.query(`select * from producto where tipo_pro = 'Snacks';`).then(response => {

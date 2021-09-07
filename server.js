@@ -26,6 +26,14 @@ app.get('/home',(req,res)=>{
     res.render('home');
 });
 
+app.get('/shoppingCart',(req,res)=>{
+    res.render('shoppingCart');
+});
+
+app.get('/iniciarSesion',(req,res)=>{
+    res.render('iniciarSesion');
+});
+
 app.listen(port,()=>{ 
     console.log(`Escuchando peticiones en el puerto ${port}`);
 })
